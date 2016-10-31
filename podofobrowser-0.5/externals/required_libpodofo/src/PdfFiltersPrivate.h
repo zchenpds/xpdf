@@ -24,6 +24,7 @@
 #include "PdfDefines.h"
 #include "PdfFilter.h"
 
+#include <cstdlib>
 #include <zlib.h>
 
 namespace PoDoFo {

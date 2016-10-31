@@ -34,6 +34,8 @@
 
 // Include common system files
 #include <cstdio>
+#include <cstring>
+#include <cstdlib>
 
 // Include common STL files
 #include <map>

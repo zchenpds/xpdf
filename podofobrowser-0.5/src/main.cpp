@@ -20,6 +20,7 @@
 
 // Sledge hammer approach to getting all required qt4 includes
 #include <QtCore>
+//#include <QtWidgets>
 #include <QtGui>
 #include <Qt3Support>
 

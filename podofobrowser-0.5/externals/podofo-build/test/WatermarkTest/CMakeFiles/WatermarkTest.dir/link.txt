@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/WatermarkTest.dir/WatermarkTest.o  -o WatermarkTest  -L/home/zchenpds/git/xpdf/podofobrowser-0.5/externals/podofo-build/src -rdynamic -lpodofo -lfontconfig -lz -lfreetype -ljpeg -lfontconfig -lz -lfreetype -ljpeg -Wl,-rpath,/home/zchenpds/git/xpdf/podofobrowser-0.5/externals/podofo-build/src 

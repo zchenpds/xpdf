@@ -28,6 +28,9 @@ The Qt4 port of PoDoFoBrowser is best built with CMake version 2.4 or newer
 (CMake 2.5 from CMake CVS is best).
 
 cmake -G "Unix Makefiles" \
+	-DLIBPODOFO_DIR=/home/zchenpds/podofo/lib
+
+cmake -G "Unix Makefiles" \
 	-DLIBPODOFO_DIR=/path/to/podofo_install_dir \
 	-DCMAKE_INCLUDE_PATH=/path/to/extra/includes \
 	-DCMAKE_LIBRARY_PATH=/path/to/extra/libraries

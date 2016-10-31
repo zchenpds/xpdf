@@ -26,7 +26,7 @@
 #include "PdfStream.h"
 #include "PdfDictionary.h"
 #include "PdfRefCountedBuffer.h"
-
+#include <cstdlib>
 namespace PoDoFo {
 
 class PdfName;

@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/podofopdfinfo.dir/pdfinfo.o CMakeFiles/podofopdfinfo.dir/podofopdfinfo.o  -o podofopdfinfo  -L/home/zchenpds/git/xpdf/podofobrowser-0.5/externals/podofo-build/src -rdynamic -lpodofo -lfontconfig -lz -lfreetype -ljpeg -Wl,-rpath,/home/zchenpds/git/xpdf/podofobrowser-0.5/externals/podofo-build/src: 

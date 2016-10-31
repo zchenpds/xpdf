@@ -22,7 +22,7 @@
 #define _PDF_INPUT_STREAM_H_
 
 #include "PdfDefines.h"
-
+#include <cstring>
 namespace PoDoFo {
 
 class PdfInputDevice;

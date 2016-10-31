@@ -108,7 +108,7 @@ line to see all compiler commands etc, eg:
 ================================
 
 Linux and UNIX users should be able to build PoDoFo by cd'ing into the PoDoFo
-checkout or unpacked tarball directory (here assumed to be named "podofo-src")
+checkout or unpacked tarball directory (here assumed to be named "required_libpodofo")
 then running the build commands shown below. The CMake command below will
 install into $HOME/podofo to avoid needing root priveleges for installation,
 but you can change the destination to wherever you want or remove the install
@@ -118,7 +118,7 @@ To build and install:
 
 mkdir ../podofo-build
 cd ../podofo-build
-cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX="$HOME/podofo" ../podofo-src
+cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX="$HOME/podofo" ../required_libpodofo
 make
 make install
 
@@ -132,14 +132,14 @@ If you need to specify additional paths to search for libraries, set the
 CMAKE_INCLUDE_PATH and CMAKE_LIBRARY_PATH environment variables or set them on
 the command line:
 
-cmake -G "Unix Makefiles" ../podofo-src \
+cmake -G "Unix Makefiles" ../required_libpodofo \
 	-DCMAKE_INCLUDE_PATH=/usr/sfw/include \
 	-DCMAKE_LIBRARY_PATH=/usr/sfw/lib
 
 If you wish to generate only a static library or only a shared library, set the
 PODOFO_BUILD_SHARED and/or PODOFO_BUILD_STATIC flags:
 
-cmake -G "Unix Makefiles" ../podofo-src \
+cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX="$HOME/podofo" ../required_libpodofo \
 	-DCMAKE_INCLUDE_PATH=/usr/sfw/include \
 	-DCMAKE_LIBRARY_PATH=/usr/sfw/lib \
 	-DPODOFO_BUILD_SHARED=TRUE \
@@ -195,7 +195,7 @@ are known to work.
 
 md ..\podofo-debug
 cd ..\podofo-debug
-cmake -G "MinGW Makefiles" ..\podofo-src -DCMAKE_INCLUDE_PATH=c:\progra~1\gnuwin32\include -DCMAKE_LIBRARY_PATH=c:\progra~1\gnuwin32\lib
+cmake -G "MinGW Makefiles" ..\required_libpodofo -DCMAKE_INCLUDE_PATH=c:\progra~1\gnuwin32\include -DCMAKE_LIBRARY_PATH=c:\progra~1\gnuwin32\lib
 mingw32-make
 
 One of the easiest ways to get MinGW is as part of the Qt4 package from

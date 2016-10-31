@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/PdfError_Test.dir/PdfError_Test.o  -o PdfError_Test  -L/home/zchenpds/git/xpdf/podofobrowser-0.5/externals/podofo-build/src -rdynamic -lpodofo -lfontconfig -lz -lfreetype -ljpeg -lfontconfig -lz -lfreetype -ljpeg -Wl,-rpath,/home/zchenpds/git/xpdf/podofobrowser-0.5/externals/podofo-build/src 
